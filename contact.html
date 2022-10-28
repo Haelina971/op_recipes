@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Potions Recipes</title>
+</head>
+<body>
+    <a name="top"></a>
+    <h1>Magic Potions Recipes</h1>
+    <h3>Where your dreams come true</h3>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+    <p>For questions or custom recipes, contact me via this form!</p>
+    <!-- Do not put post method for fake contact form, or will get error when redirecting to mess_sent.html-->
+    <form method="" action="mess_sent.html">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required /><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required /><br>
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br>
+        <label for="email">Email address:</label><br>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="subject">Subject</label><br>
+        <input type="text" id="subject" name="subject" required maxlength="50" /><br>
+        <label for="message">Message</label><br>
+        <textarea type="text" id="message" name="message" required maxlength="250"></textarea><br>
+        <input type="submit" value="Send"/>
+    </form>
+</body>
+</html>
